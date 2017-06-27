@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio</title>
+    <style>
+        
+        .parent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+            align-items: center;
+            height: 10rem;
+            width: 20rem;
+            background-color: #3c3c3c;
+        }
+        
+        .hijo1, .hijo2 {
+            height: 50%;
+            width: 30%;
+            background-color: lime;
+        }
+        
+        #animacion{
+        transition-property: background-color, border, border-radius, height, font-family, text-align;
+        transition-duration: 2000ms, 2000ms, 1000ms, 2000ms, 5000ms, 5000ms;
+        transition-timing-function: ease-in-out, ease-out, ease-out, ease, ease-out, ease-in;
+        }
+        
+        #animacion:hover{
+            background-color: #7e7c7c;
+            border: dashed 3px white;
+            border-radius: 10%;
+            height: 100%;
+            font-family: monospace;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="animacion" class="hijo1">cuadro1</div>
+        <div id="animacion" class="hijo2">cuadro2</div>
+    </div>
+</body>
+</html>
